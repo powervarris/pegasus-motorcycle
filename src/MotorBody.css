@@ -1,0 +1,16 @@
+.container {
+    max-width: 100%;
+    background-color: #e7dfd8;
+    height: auto;
+    border-style: solid;
+    border-color: #ffffff;
+    padding: 1.25rem;
+}
+
+.card-container {
+    max-width: 100%;
+    border-style: solid;
+    border-width: 1.35px;
+    padding: 1.25rem;
+    display: flex;
+}
