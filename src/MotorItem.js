@@ -5,7 +5,7 @@ import Motors from "./Motors";
 
 function MotorItem({ addToCart, removeFromCart }) {
   const handleAddToCart = (item) => {
-    addToCart({ ...item, imgSRC: item.img });
+    addToCart({ ...item, quantity: 1, imgSRC: item.img });
   };
 
   return (

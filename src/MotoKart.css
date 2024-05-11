@@ -1,0 +1,71 @@
+.motokart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.motokart-items {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.motokart-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.motokart-image {
+  width: 20%;
+}
+
+.motokart-image img {
+  width: 100%;
+  height: auto;
+}
+
+.motokart-details {
+  width: 80%;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.quantity-container button {
+  margin: 0 5px;
+}
+
+.motokart-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 25%;
+}
+
+.motokart-total-per-item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.motokart-total-per-item p {
+  margin-right: 10px;
+}
+
+.motokart-total {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.motokart-total p {
+  margin-right: 10px;
+}
