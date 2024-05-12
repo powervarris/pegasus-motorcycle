@@ -17,6 +17,9 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
+  background-color: #ffffff;
+  border-color: black;
+  border-width: 30px;
 }
 
 .motokart-image {
@@ -30,12 +33,19 @@
 
 .motokart-details {
   width: 80%;
+  background-color: #f4f2f2;
+  border-color: #000000;
+  border-width: 10px solid black;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 .quantity-container {
-  display: flex;
   align-items: center;
-  margin-right: 20px;
+  text-align: center;
+  position: relative;
+  transform: translateY(-150px);
+  margin-left: 30px;
 }
 
 .quantity-container button {
@@ -45,19 +55,28 @@
 .motokart-summary {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   width: 25%;
+  background-color: orange;  
 }
 
 .motokart-total-per-item {
-  display: flex;
   align-items: center;
-  margin-top: 10px;
-  margin-right: 20px;
+  text-align: center;
+  position: relative;
+  transform: translateY(-202px);
+  margin-left: 600px;
 }
 
 .motokart-total-per-item p {
   margin-right: 10px;
+}
+
+.motokart-price {
+  margin-right: 270px;
+  text-align: center;
+  position: relative;
+  transform: translateY(-75px);
 }
 
 .motokart-total {
