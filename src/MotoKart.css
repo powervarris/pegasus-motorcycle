@@ -1,3 +1,4 @@
+
 .motokart-container {
   display: flex;
   flex-direction: row;
@@ -54,11 +55,11 @@
 
 .motokart-summary {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   width: 25%;
- bottom: 10px;
- right: -70px;
+  position:relative;
+  float: inline-end;
 }
 
 .motokart-total-per-item {
@@ -83,13 +84,9 @@
 .motokart-total {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  position:relative;
+  margin-left: 140px;
 }
-
-.motokart-total p {
-  margin-right: 10px;
-}
-
 
 .removalbutton{
   border-width: 0px;
@@ -103,4 +100,18 @@
   image-rendering: auto;
   width: 50px;
   margin: 15px;
+}
+.motokart-summary h3{
+  margin-left: 40px;
+  margin-right: -230px;
+}
+
+.motokart-checkout button{
+  float: inline-end;
+  background-color: #F3E080;
+  border-color:#E9D77B;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
 }

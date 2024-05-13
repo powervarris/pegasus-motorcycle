@@ -48,7 +48,7 @@ function MotoKart({
                 <button onClick={() => addQuantity(item)}>+++</button>
               </div>
               <div className="motokart-total-per-item">
-                <h2>Total:</h2>
+                <h3>Total:</h3>
                 <span>₱{item.price * item.quantity}</span>
               </div>
               <button onClick={() => removeFromCart(item)} className="removalbutton">
@@ -57,13 +57,20 @@ function MotoKart({
             </div>
           </div>
         ))}
-      </div>
-      <div className="motokart-summary">
-      <h4>{cartItems.length} Items</h4> <h2>Total:</h2>
+        <div className="motokart-summation">
+        <div className="motokart-summary">
+      <h4>{cartItems.length} Items</h4> <h3>Total:</h3>
         <div className="motokart-total">
           <h3>₱{total}</h3>
         </div>
+        </div>
+        
       </div>
+      <div className="motokart-checkout">
+      <button><b>Checkout</b></button>
+      </div>
+      </div>
+     
     </div>
   );
 }
