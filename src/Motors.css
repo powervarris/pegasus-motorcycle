@@ -88,3 +88,15 @@
 .modal-body {
     margin-top: 2rem;
 }
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul li {
+    width: calc(33.33% - 50px); /* subtract 10px for margin */
+    margin: 10px;
+}

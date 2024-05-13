@@ -1,0 +1,12 @@
+.topnav-container {
+    /* display: flex; */
+    padding: 5px;
+    background-color: rgba(0, 0, 0);
+    border: 2px solid rgba(29,185,84);
+    text-align: center;
+}
+
+.header-logo {
+    width: 200px;
+    border: 2px solid rgba(29,185,84);
+}

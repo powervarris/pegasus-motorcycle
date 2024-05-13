@@ -1,0 +1,16 @@
+.title-container{
+    /* display: flex; */
+    border: 2px solid rgba(29,185,84);
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.title-logo {
+    padding-top: 50px;
+    width: 400px;
+}
+
+.title-text {
+    color: #B69F24;
+}

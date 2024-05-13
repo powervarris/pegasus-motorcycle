@@ -1,6 +1,6 @@
 import React from "react";
 
-let motorcycles = [
+const motorcycles = [
     {
         motorKey: "1",
         imgSRC:

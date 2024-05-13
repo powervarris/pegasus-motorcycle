@@ -10,11 +10,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #252525;
-  padding: 1.25rem;
+  background-color: #0e0e0e;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.filter-container {
+  border: 2px solid rgba(29,185,84);
+  padding-bottom: 10px;
 }
