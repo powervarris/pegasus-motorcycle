@@ -24,7 +24,7 @@ function Motors(props) {
           <h1>{props.model}</h1>
           <p className="p1">Manufactured by {props.brand}</p>
           <p>
-            <b>Color:</b> {props.color}
+            <b>Colors:</b> {props.color}
           </p>
           <p>
             <b>Price:</b> ₱{props.price}
@@ -50,8 +50,7 @@ function Motors(props) {
         </div>
         <div className="modal-body">
           <p>Manufactured by {props.brand}</p>
-          <p>Color: {props.color}</p>
-          <p>Price: ₱{props.price}</p>
+          <p>Price: ${props.price}</p>
         </div>
       </Modal>
     </div>

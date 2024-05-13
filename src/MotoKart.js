@@ -49,7 +49,7 @@ function MotoKart({
               </div>
               <div className="motokart-total-per-item">
                 <h3>Total:</h3>
-                <span>₱{item.price * item.quantity}</span>
+                <span>${item.price * item.quantity}</span>
               </div>
               <button onClick={() => removeFromCart(item)} className="removalbutton">
                 <img src="./Untitled-removebg-preview.png" alt="removal"/>
@@ -61,7 +61,7 @@ function MotoKart({
         <div className="motokart-summary">
       <h4>{cartItems.length} Items</h4> <h3>Total:</h3>
         <div className="motokart-total">
-          <h3>₱{total}</h3>
+          <h3>${total}</h3>
         </div>
         </div>
         

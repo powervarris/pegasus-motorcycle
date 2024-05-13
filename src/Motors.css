@@ -40,11 +40,15 @@
 .add-to-cart-button {
     text-align: center;
     margin: 1rem;
+    display: flex;
+    gap: 1.25rem;
+
 }
 
 .add-to-cart-button button {
     padding: 0.75rem;
-    width: 68%;
+   
+    width: 28%;
     background-color: #ff7b34;
     border: 0;
 }
@@ -97,6 +101,6 @@ ul {
 }
 
 ul li {
-    width: calc(33.33% - 50px); /* subtract 10px for margin */
-    margin: 10px;
+    width: calc(20% - 50px); /* subtract 10px for margin */
+    margin: 20px;
 }

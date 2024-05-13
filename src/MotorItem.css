@@ -7,5 +7,30 @@
 .motocards-item {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
 }
+
+
+.pagination {
+    text-align: center;
+    margin-top: 1rem;
+    
+}
+
+.pagination button{
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    font-size: 20px;
+   
+}
+.pagination button:hover{
+    background-color: #c85415;
+    /* #ff7b34
+    #c85415 */
+}
+
+.active {
+    background-color: #ff7b34;
+  }
+  
