@@ -9,7 +9,7 @@
 .motokart-items {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
 }
 
 .motokart-item {
@@ -57,7 +57,8 @@
   flex-direction: column;
   align-items: center;
   width: 25%;
-  background-color: orange;  
+ bottom: 10px;
+ right: -70px;
 }
 
 .motokart-total-per-item {
@@ -87,4 +88,19 @@
 
 .motokart-total p {
   margin-right: 10px;
+}
+
+
+.removalbutton{
+  border-width: 0px;
+  float: inline-end;
+  image-rendering: auto;
+}
+
+.removalbutton img{
+  border-width: 0px;
+  float: inline-end;
+  image-rendering: auto;
+  width: 50px;
+  margin: 15px;
 }

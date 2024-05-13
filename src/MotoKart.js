@@ -51,15 +51,15 @@ function MotoKart({
                 <h2>Total:</h2>
                 <span>₱{item.price * item.quantity}</span>
               </div>
-              <button onClick={() => removeFromCart(item)}>
-                Remove from MotoKart
+              <button onClick={() => removeFromCart(item)} className="removalbutton">
+                <img src="./Untitled-removebg-preview.png" alt="removal"/>
               </button>
             </div>
           </div>
         ))}
       </div>
       <div className="motokart-summary">
-          <h2>Overall Total:</h2>
+      <h4>{cartItems.length} Items</h4> <h2>Total:</h2>
         <div className="motokart-total">
           <h3>₱{total}</h3>
         </div>
