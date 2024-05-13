@@ -50,7 +50,13 @@ function Motors(props) {
         </div>
         <div className="modal-body">
           <p>Manufactured by {props.brand}</p>
+          <p>Date Manufactured: {props.manuDate}</p>
+          <p>Model: {props.model}</p>
+          <p>Available Color: {props.color}</p>
           <p>Price: ${props.price}</p>
+          <div className="motorcard-image">
+          <img src={props.img} alt="" />
+        </div>
         </div>
       </Modal>
     </div>

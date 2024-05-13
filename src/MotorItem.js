@@ -38,6 +38,7 @@ function MotorItem({ addToCart, removeFromCart, filteredData }) {
             <Motors
               id={motorcycles.motorKey}
               img={motorcycles.imgSRC}
+              manuDate={motorcycles.manuDate}
               brand={motorcycles.brand}
               model={motorcycles.model}
               color={motorcycles.color}
