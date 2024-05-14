@@ -1,8 +1,14 @@
-.container-sort {
-    display: inline;
-    margin-left: 25px;
+select {
+    font-family: "Italiana", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 170%;
+    margin-left: 1.5%;
+    height: max-content;
 }
 
-.poppins-bold-select {
-    font-size: 20px;
+option {
+    font-family: "Italiana", sans-serif;
+    font-weight: bold;
+    font-style: normal;
 }

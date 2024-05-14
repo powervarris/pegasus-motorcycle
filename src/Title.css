@@ -1,6 +1,4 @@
 .title-container{
-    /* display: flex; */
-    border: 2px solid rgba(29,185,84);
     text-align: center;
     align-items: center;
     padding-bottom: 50px;
@@ -12,5 +10,14 @@
 }
 
 .title-text {
-    color: #B69F24;
+    font-family: "BlackChancery", sans-serif;
+    text-shadow: 1px 1px 10px #B69F24, 1px 1px 10px #B69F24;
+    color: #f5db4c;
+    font-size: 500%;
+}
+
+.title-sub-text {
+    font-family: "BlackChancery", sans-serif;
+    text-shadow: 1px 1px 10px #B69F24, 1px 1px 10px #B69F24;
+    color: #f5db4c;
 }

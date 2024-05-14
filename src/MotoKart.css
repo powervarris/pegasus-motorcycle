@@ -10,108 +10,154 @@
 .motokart-items {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 120%;
+  background-color: rgb(0, 0, 1);
+  border-color: #f5db4c;
+  border-width: 10px;
+  border-style: groove;
+  padding: 2.5%;
 }
 
 .motokart-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
-  background-color: #ffffff;
-  border-color: black;
-  border-width: 30px;
+  justify-content: center;
+  width: 95%;
+  margin: 1.25%;
+  background-color: white;
+  border-color: #f5db4c;
+  border-width: 10px;
+  border-style: groove;
 }
 
 .motokart-image {
-  width: 20%;
+  max-width: 20%;
+  max-height: 20%;
+  background-color: #ffffff;
 }
 
 .motokart-image img {
   width: 100%;
   height: auto;
+  background-color: #ffffff;
 }
 
 .motokart-details {
+  display: flex;
+  flex-wrap: wrap;
   width: 80%;
-  background-color: #f4f2f2;
-  border-color: #000000;
-  border-width: 10px solid black;
-  padding-left: 20px;
-  padding-top: 10px;
+  background-color: rgb(0, 0, 1);
+  justify-content: left;
+  padding: 2.5%;
+}
+
+.kart-column {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 1.5%;
 }
 
 .quantity-container {
   align-items: center;
   text-align: center;
-  position: relative;
-  transform: translateY(-150px);
-  margin-left: 30px;
 }
 
 .quantity-container button {
-  margin: 0 5px;
+  margin: 10%;
+}
+
+.summation-container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.summation-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10%;
 }
 
 .motokart-summary {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 25%;
-  position:relative;
-  float: inline-end;
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2.5%;
 }
 
 .motokart-total-per-item {
   align-items: center;
   text-align: center;
-  position: relative;
-  transform: translateY(-202px);
-  margin-left: 600px;
-}
-
-.motokart-total-per-item p {
-  margin-right: 10px;
 }
 
 .motokart-price {
-  margin-right: 270px;
+  align-items: center;
   text-align: center;
-  position: relative;
-  transform: translateY(-75px);
 }
 
 .motokart-total {
   display: flex;
   align-items: center;
   position:relative;
-  margin-left: 140px;
 }
 
 .removalbutton{
-  border-width: 0px;
-  float: inline-end;
-  image-rendering: auto;
+  float: right;
+  background-color: #fcfcfc;
+  border-color: #f5db4c;
+  border-width: 5px;
+  border-style: groove;
+  padding: 2%;
+
+  font-family: "Constantine", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  text-shadow: 1px 1px 30px #B69F24, 1px 1px 10px #B69F24;
+  font-size: 150%;
 }
 
-.removalbutton img{
-  border-width: 0px;
-  float: inline-end;
-  image-rendering: auto;
-  width: 50px;
-  margin: 15px;
-}
-.motokart-summary h3{
-  margin-left: 40px;
-  margin-right: -230px;
+.button-container {
+  display: flex;
+  margin-left: auto;
 }
 
 .motokart-checkout button{
-  float: inline-end;
-  background-color: #F3E080;
-  border-color:#E9D77B;
-  border-radius: 3px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 20px;
+  background-color: #fcfcfc;
+  border-color: #f5db4c;
+  border-width: 5px;
+  border-style: groove;
+  padding: 2%;
+
+  font-family: "Constantine", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  text-shadow: 1px 1px 30px #B69F24, 1px 1px 10px #B69F24;
+  font-size: 150%;
+}
+
+.kart-title {
+  font-family: "Constantine", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: #f5db4c;
+    font-size: 200%;
+}
+
+.kart-main-text {
+  font-family: "Constantine", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: #f5db4c;
+}
+
+.kart-text {
+  font-family: "Constantine", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #f5db4c;
 }

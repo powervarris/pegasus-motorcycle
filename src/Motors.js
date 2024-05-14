@@ -21,14 +21,10 @@ function Motors(props) {
           <img src={props.img} alt="" />
         </div>
         <div className="motorcard-details">
-          <h1>{props.model}</h1>
+          <h1 className="model-text">{props.model.toUpperCase()}</h1>
           <p className="p1">Manufactured by {props.brand}</p>
-          <p>
-            <b>Colors:</b> {props.color}
-          </p>
-          <p>
-            <b>Price:</b> ₱{props.price}
-          </p>
+          <br/>
+          <p className="props-text">${props.price}</p>
         </div>
         <div className="add-to-cart-button">
           <button onClick={openModal}>See Motor Details</button>
@@ -44,19 +40,19 @@ function Motors(props) {
       >
         <div className="modal-header">
           <h2 className="modal-title">{props.model}</h2>
-          <button className="modal-close-button" onClick={closeModal}>
-            Close
-          </button>
         </div>
         <div className="modal-body">
-          <p>Manufactured by {props.brand}</p>
-          <p>Date Manufactured: {props.manuDate}</p>
-          <p>Model: {props.model}</p>
-          <p>Available Color: {props.color}</p>
-          <p>Price: ${props.price}</p>
-          <div className="motorcard-image">
-          <img src={props.img} alt="" />
-        </div>
+          <p className="modal-text-big">{props.brand} {props.manuDate}</p>
+          <div className="modal-sub-text">
+            <p className="modal-text">Color: {props.color}</p>
+            <p className="modal-text">Price: ${props.price}</p>
+          </div>
+          <div className="modal-image-container">
+            <img src={props.img} className="modal-image" alt="motorimage" />
+          </div>
+          <button className="modal-close-btn" onClick={closeModal}>
+            Close
+          </button>
         </div>
       </Modal>
     </div>

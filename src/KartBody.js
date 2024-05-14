@@ -11,9 +11,9 @@ function KartBody({
   total,
 }) {
   return (
-    <div className="container">
-      <h2 style={{ textAlign: "center" }}>MotoKart</h2>
-      <div className="card-container">
+    <div className="container-kart">
+      <h2 className="motokart-title">MotoKart</h2>
+      <div className="card-container-kart">
         <MotoKart
           cartItems={cartItems}
           removeFromCart={removeFromCart}

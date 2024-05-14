@@ -23,7 +23,7 @@ function MotorItem({ addToCart, removeFromCart, filteredData }) {
 
   const paginationButtons = Array.from({ length: pageNumbers }, (_, i) => i + 1).map(pageNumber => {
     const isCurrentPage = pageNumber === currentPage;
-    const buttonClassName = isCurrentPage ? 'page-item active' : 'page-item';
+    const buttonClassName = isCurrentPage ? 'page-item-active' : 'page-item';
 
     return (
       <button key={pageNumber} onClick={() => handlePageChange(pageNumber)} className={buttonClassName}>{pageNumber}</button>
@@ -32,7 +32,7 @@ function MotorItem({ addToCart, removeFromCart, filteredData }) {
 
   return (
     <div>
-      <ul className='motocard'>
+      <ul className='motocards'>
         {displayedData.map((motorcycles) => (
           <li key = {motorcycles.motorKey} className='motocards-item'>
             <Motors

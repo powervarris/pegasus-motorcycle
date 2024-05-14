@@ -136,6 +136,7 @@ export default function App() {
       <div className="filter-container">
         <Searchbar handleSearch={handleSearch} searchTerm={searchTerm} />
         <SortDropdown handleSortChange={handleSortChange}/>
+        <br/>
         <NumResult filteredData={filteredData}/>
         <br/>
       </div>

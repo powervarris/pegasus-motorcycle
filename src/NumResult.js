@@ -1,10 +1,11 @@
 import React from 'react';
+import "./Result.css";
 
 
 function NumResult ({filteredData}) {
     return (
-        <p style={{color:'white'}}>
-            Found <strong>{filteredData.length}</strong> results
+        <p className="result">
+            Found <h4 className="number">{filteredData.length}</h4> results
         </p>
     )
 }

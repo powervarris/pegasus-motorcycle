@@ -1,0 +1,19 @@
+.result{
+    font-family: "Italiana", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #f5db4c;
+    line-height: 0%;
+    margin-left: 1%;
+}
+
+.number{
+    font-family: "Italiana", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 120%;
+    text-shadow: 1px 1px 10px #B69F24, 1px 1px 10px #B69F24;
+    color: #f5db4c;
+    display: inline;
+    line-height: 0%;
+}
