@@ -102,11 +102,12 @@
     background: #fff;
     padding: 5%;
     width: 80%;
-    max-width: 25%;
+    max-width: 20%;
     box-shadow: 5px 5px 20px #f5db4c;
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 
 .modal-header {
@@ -134,7 +135,7 @@
 }
 
 .modal-image {
-    width: 100%;
+    width: 37%;
 }
 
 .modal-text-big {
@@ -155,6 +156,7 @@
 }
 
 .modal-image-container{
+    display: flex;
     margin-bottom: 10%;
 }
 

@@ -44,11 +44,18 @@ function Motors(props) {
         <div className="modal-body">
           <p className="modal-text-big">{props.brand} {props.manuDate}</p>
           <div className="modal-sub-text">
-            <p className="modal-text">Color: {props.color}</p>
+            <p className="modal-text">Motor Type: {props.type}<br/><br/></p>
+            <p className="modal-text">Engine Size: {props.engineSize}<br/><br/></p>
+            <p className="modal-text">Engine Type:{props.engineType}<br/><br/></p>
+            <p className="modal-text">Torque: {props.torque}<br/><br/></p>
+            <p className="modal-text">Available colors: <br/> {props.color}<br/><br/></p>
             <p className="modal-text">Price: ${props.price}</p>
           </div>
           <div className="modal-image-container">
             <img src={props.img} className="modal-image" alt="motorimage" />
+            <img src={props.img1} className="modal-image" alt="motorimage" />
+            <img src={props.img2} className="modal-image" alt="motorimage" />
+            <img src={props.img3} className="modal-image" alt="motorimage" />
           </div>
           <button className="modal-close-btn" onClick={closeModal}>
             Close
