@@ -5,6 +5,8 @@ import { motorcycles } from "./Data";
 
 function Motors(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [props.img, props.img1, props.img2, props.img3];
 
   function openModal() {
     setModalIsOpen(true);
@@ -12,6 +14,14 @@ function Motors(props) {
 
   function closeModal() {
     setModalIsOpen(false);
+  }
+
+  function nextImage() {
+    setCurrentImage((currentImage + 1) % images.length);
+  }
+
+  function previousImage() {
+    setCurrentImage((currentImage - 1 + images.length) % images.length);
   }
 
   return (
@@ -28,15 +38,19 @@ function Motors(props) {
         </div>
         <div className="add-to-cart-button">
           <button onClick={openModal}>See Motor Details</button>
-          <button onClick={() => props.addToCart(props)}>Add to Cart</button>
+          <button onClick={() => {
+            props.addToCart(props);
+            alert('Added to cart')
+          }}>Add to Cart
+          </button>
         </div>
       </div>
 
       <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Motor Details"
-        className="modal-content"
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Motor Details"
+          className="modal-content"
       >
         <div className="modal-header">
           <h2 className="modal-title">{props.model}</h2>
@@ -52,10 +66,9 @@ function Motors(props) {
             <p className="modal-text">Price: ${props.price}</p>
           </div>
           <div className="modal-image-container">
-            <img src={props.img} className="modal-image" alt="motorimage" />
-            <img src={props.img1} className="modal-image" alt="motorimage" />
-            <img src={props.img2} className="modal-image" alt="motorimage" />
-            <img src={props.img3} className="modal-image" alt="motorimage" />
+            <img src={images[currentImage]} className="modal-image" alt="motorimage"/>
+            <button onClick={previousImage}>Previous</button>
+            <button onClick={nextImage}>Next</button>
           </div>
           <button className="modal-close-btn" onClick={closeModal}>
             Close

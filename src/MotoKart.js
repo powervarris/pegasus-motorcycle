@@ -73,14 +73,17 @@ function MotoKart({
               </div>
 
               <div className="button-container">
-                <button onClick={() => removeFromCart(item)} className="removalbutton">
+                <button onClick={() => {
+                  removeFromCart(item);
+                  alert('Removed from cart')
+                }} className="removalbutton">
                   Remove
                 </button>
               </div>
             </div>
-          </div> 
+          </div>
         ))}
-        
+
         <div className="summation-container">
           <div className="motokart-summary">
             <div className="summation-div">
